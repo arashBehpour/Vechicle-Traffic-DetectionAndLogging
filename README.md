@@ -11,8 +11,11 @@ Problem:
 
 Related Work: 
 
+   “Honda Motor Co., the small town of Marysville and the state of Ohio are joining forces to solve one of the many puzzles facing the future of mobility: how to avoid accidents at intersections, where traffic and pedestrians often collide with disastrous, and often fatal, outcomes “.  Honda uses a V-to-X (vehicle-to-everything) technology that uses information (in the form of radio signals) about an upcoming intersection to give the driver a warning “heads-up” display to indicate extra caution in that area. The cars will log and report each time It receives a warning. Honda also believes that this technology will lead to a smarter and safer transportation ecosystem that can be a key role in achieving a zero-collision society. This research initiative in the city of Marysville is believed to help give a better understanding on how V-to-X technologies can be further developed to benefit all road users. The focus for these technologies would be in urban intersections. In urban intersections it is difficult to use sensing technologies (radar, cameras, and LIDAR) around corners blocked by buildings. 
+   Source: https://www.forbes.com/sites/doronlevin/2018/10/08/honda-smart-intersection-a-step-toward-driverless-future-with-fewer-accidents-fatalities/#32cd8adac0fa 
 
-Approaches: (note: Both require training images)
+
+Approaches(note: Both require training images):
     
    1) Pre-trained CNN: This approach for feature extraction uses a convolutional neural network that requires training images to extract an objects features. A convolutional neural network's (CNN) effectiveness would stem from accurate feature extraction from its training images. When selecting training images, you want to pick good quality images, evened out samples of each object, and limit the number of poor features being extracted. Different neural networks have different number of layers that are used to train images. Layers in a CNN usually consist of convolutional and pooling layers on the images being trained on. There are a lot of different pre-trained neural networks available to be used. An example of a neural network we used (alexnet) can be found here https://www.mathworks.com/help/deeplearning/ref/alexnet.html
   
