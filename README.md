@@ -31,11 +31,12 @@ Approach Taken:
 
 Results/Analysis:
 
+   The results of our tracking algorithm combined with our CNN detection are shown in a video linked on our website. The green boxes are cars detected and counted as they leave the image. While the implementation does correctly count cars as they leave the box, there are some aspects that can be improved. Because we were not able to add our own dataset and had to use the pre-trained Matlab vehicle CNN, buses and large cars are often identified as multiple cars. This leads to false positives which incremented the count of cars to a much greater number than expected. This issue is shown in the Object Detection Error above, in which the bus is counted as five cars. When a car enters the blue box, it is added to a list. A car is only counted as having left the intersection if it has been added to the list and is found outside the blue box and in the red box.  This stops cars from being counted twice as they pass through the roadway by only tracking cars which are detected passing through it (as opposed to in it). Additionally, this adds further flexibility in that the number of cars in each direction could be counted, if the algorithm were to be expanded. Were the CNN detection improved, we expect the tracking algorithm would perform very well. While the Perspective Transform could be a useful tool for improving car detection and visualizing the results of this algorithm, we were unable to achieve the desired results.
 
 
 Conclusion:
 
-
+   Our results show that the project correctly detects and logs a lot of the cars that pass through the roadway. The project is, however, not ready to be used on a large scale intersection or long-term video. Significant improvements need to be made to the detection's accuracy. If we were able to correctly train our RCNN with a larger training set then our vehicle detection portion of the project would have resulted in a much higher accuracy in vehicles detected. This project is a success in that it provides a good basis for an implementation of vehicle detection and logging using computer vision. Some additional changes are described in the future work section which would greatly increase the lifetime of our vehicle detection and logging algorithm.   
 
 
 Future Work:
